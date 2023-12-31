@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111713571-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-111713571-1');
+	</script>
+
+	<!-- Show more content -->
+	<script type="text/javascript">
+		function toggle_vis(id) {
+	    // var e = document.getElementById(id);
+	    var e = document.getElementsByClassName(id);
+			var showText = document.getElementById("showText");
+			for (var i = 0; i < e.length; i++) {
+		    	if (e[i].style.display == "none") {
+		        	e[i].style.display = "inline";
+	    			showText.innerHTML = "[Show less]";
+		    	} else {
+		    		e[i].style.display = "none";
+		    		showText.innerHTML = "[Show more]";
+		    	}
+		    }
+	    }
+	</script>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+	<!-- Custom styles for this template -->
+	<link href="files/jumbotron.css" rel="stylesheet">
+	<script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+</head>
+
+<title>Lujie Yang</title>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+	    <div class="container">
+		<a class="navbar-brand" href="#Home">Lujie Yang</a>
+
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Publications">Publications</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Honors">Honors</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Teaching">Teaching</a>
+				</li>
+			</ul>
+		</div>
+	    </div>
+	</nav>
+
+	<div class="container" style="padding-top: 20px; font-size: 17px">
+		<div class="row">
+			<div class="col-md-3", style="padding-right: 40px">
+				<br>
+				<img class="img-responsive img-rounded" src="files/lujieyang.jpeg" alt="Photo" style="max-width: 100%; border:1px solid black"><br>
+			</div>
+
+			<div class="col-md-9">
+			<br>
+			<p><font style="font-size: 20px"><b>Lujie Yang</b></font></p>
+
+			<p>I am a 4th year PhD student at MIT EECS advised by Prof. <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>. I obtained my bachelor's degree from UC Berkeley, under the mentorship of Prof. <a href="https://vcresearch.berkeley.edu/faculty/francesco-borrelli" target="_blank">Francesco Borrelli</a>.
+			</p>
+
+			<p>I am interested in the planning and control of robotic systems using <b>Optimization</b> and <b>Control theory</b>.
+                My research seeks to enable robots to operate robustly and intelligently, with theoretical guarantees, by combining data-driven and model-based optimization techniques.
+			</p>
+
+			<p>
+            <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=oU5haR0AAAAJ"><font color="black"><i class="ai ai-google-scholar ai-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+            <a target="_blank" href="https://github.com/lujieyang"><font color="black"><i class="fab fa-github fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+            lujie [at] mit (dot) edu
+			</p>
+
+			</div>
+		</div>
+	</div><br><br>
+
+
+  <!-- News -->
+	<!-- <div class="container">
+		
+	</div><br><br> -->
+
+
+	<!-- Talks -->
+	<!-- <div class="container">
+		<ul>
+			<li>[2023/12] Invited Talk at <b>Amazon Science</b></li>
+			<li>[2023/11] Invited Talk at <b>Tsinghua University, <a href="https://iiis.tsinghua.edu.cn/en/" target="_blank">Institute for Interdisciplinary Information Sciences (IIIS)</a></b></li>
+			<li>[2023/10] Invited Talk at <b>IROS 2023 Workshop on <a href="https://sites.google.com/view/iros23-causal-robots/" target="_blank">Causality for Robotics</a></b></li>
+			<li>[2023/09] Invited Talk at <b><a href="https://robotics.illinois.edu/robotics-seminar-series/" target="_blank">Robotics Seminar @ Illinois</a></b>
+			<li>[2023/08] Invited Talk at <b>Stanford Intelligent Systems Laboratory</b></li>
+			<li>[2023/07] Invited Talk at <b>Peking University</b></li>
+			<li>[2023/06] Invited Talk at <b>CVPR 2023 Workshop on <a href="https://sites.google.com/view/ieeecvf-cvpr2023-precognition" target="_blank">Precognition: Seeing through the Future</a></b> <a href="https://www.youtube.com/watch?v=5BvDfA68sJE" target="_blank">[Recording]</a></li>
+			<li>[2023/05] Invited Talk at <b>ICRA 2023 Workshop on <a href="https://deformable-workshop.github.io/icra2023/" target="_blank">Representing and Manipulating Deformable Objects</a></b></li>
+			<div class="talks" style="display:none">
+				<li>[2022/12] Guest Lecture at <b>NYU</b>, Invited Talk at <b>Shanghai AI Laboratory</b></li>
+				<li>[2022/10] Invited Talk at <b>Stanford</b> and <b>UC Berkeley</b></li>
+				<li>[2022/07] Invited Talk at <b>RSS 2022 Workshop on <a href="https://imrss2022.github.io/" target="_blank">Implicit Representations for Robotic Manipulation</a></b> <a href="https://www.youtube.com/watch?v=gawSKjA9skU" target="_blank">[Recording]</a> and <b>ISEE AI</b></li>
+				<li>[2022/06] <b>PhD Thesis Defense at MIT CSAIL</b> <a href="https://www.youtube.com/watch?v=8eof6F4-r0k" target="_blank">[Recording]</a>
+				<li>[2022/04] Invited Talk at <b>Google Research</b></li>
+				<li>[2022/01] Invited Talk at <b>TU Berlin</b></li>
+				<li>[2021/12] Invited Talk at <b>Meta AI Research</b></li>
+				<li>[2021/11] Invited Talk at <b>Toyota Research Institute</b></li>
+				<li>[2021/08] Invited Talk at <b>Wayve.ai</b> and <b>Tsinghua University</b></li>
+				<li>[2021/06] Invited Talk at <b>CVPR 2021 Tutorial on <a href="https://xiaolonw.github.io/graphnnv3/" target="_blank">Learning Representations via Graph-structured Networks</a></b> <a href="https://www.youtube.com/watch?v=ost49rbnI_8&t=7207s" target="_blank">[Recording]</a></li>
+				<li>[2021/05] Invited Talk at <b>ICLR 2021 Workshop on <a href="https://simdl.github.io/overview/" target="_blank">Deep Learning for Simulation</a></b> <a href="https://youtu.be/sfblDZeyjk8" target="_blank">[Recording]</a></li>
+				<li>[2021/04] Invited Talk at <b>Brown University</b></li>
+				<li>[2021/03] Invited Talk at <b>Extrality.ai</b></li>
+				<li>[2020/10] Invited Talk at <b>Stanford</b> and <b>UMass Amherst</b></li>
+				<li>[2020/09] Invited Talk at the <b>University of Toronto</b> <a href="https://www.youtube.com/watch?v=y_j53bkKzq8" target="_blank">[Recording]</a></li>
+			</div>
+			<li style="font-size: 16px">
+				<a href="javascript:toggle_vis('talks')" id="showText">[Show more]</a>
+			</li>
+		</ul> -->
+
+	<!-- Publications -->
+	<div class="container">
+		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">
+			Publications
+		</h3>
+
+		<div id="pubs"></div>
+        <font color="black">(* indicates equal contribution)</font><br><hr>
+
+		<!-- <script id="pubs_selected" language="text">
+			<font color="black">(* indicates equal contribution)</font><br><hr> -->
+
+            <div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/corl_hardware.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Fighting Uncertainty with Gradients: Offline Reinforcement Learning via Diffusion Score Matching</font></b><br>
+				H.J. Terry Suh, Glen Chou*, Hongkai Dai*, <u>Lujie Yang</u>*, Abhishek Gupta, Russ Tedrake
+				<br>
+				<b><font color="navy">Conference on Robot Learning (CoRL) 2023</font></b> <br>
+				<a href="https://sites.google.com/view/score-guided-planning/home" target="_blank"> <small>[Project]</small></a>
+				<a href="https://arxiv.org/abs/2306.14079" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/hjsuh94/score_po" target="_blank"> <small>[Code]</small></a>
+                </div>
+			</div><hr>
+        
+            <div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/cartpole.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Approximate Optimal Controller Synthesis for Cart-Poles and Quadrotors via Sums-of-Squares</font></b><br>
+				<u>Lujie Yang</u>, Hongkai Dai, Alexandre Amice, Russ Tedrake
+				<br>
+				<b><font color="navy">Robotics and Automation Letters (RA-L) 2023</font></b> <br>
+                <b><font color="navy">MIT LIDS Student Conference 2023</font>, <font color="firebrick">Best Presentation Award</font></b> <br>
+                <a href="https://www.youtube.com/watch?v=QQR_pPNPeyg" target="_blank"> <small>[Video]</small></a>
+				<a href="https://arxiv.org/abs/2304.12533" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://deepnote.com/workspace/lujieyang-d88573a8-1f76-410d-81bf-e0d65a047c67/project/hjb-sos-7a7b3bf1-fa02-4814-9b91-7df510a7f674/notebook/cubic-14b9215e2e3246ecb84a13ed741bf9ef?" target="_blank"> <small>[Code]</small></a>
+                </div>
+			</div><hr>
+
+            <div class="row">
+				<div class="col-md-3">
+					<video width="100%" playsinline="" autoplay="" loop="" preload="" muted="" style="border:1px solid black">
+                		<source src="files/paper/TRO_hardware_2x.mp4" type="video/mp4">
+            		</video>
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Global Planning for Contact-Rich Manipulation via Local Smoothing of Quasi-Dynamic Contact Models</font></b><br>
+				Tao Pang*, H.J. Terry Suh*, <u>Lujie Yang</u>, Russ Tedrake
+				<br>
+				<b><font color="navy">Transactions on Robotics (T-RO) 2023</font></b> <br>
+				<a href="https://sites.google.com/view/global-planning-contact/home" target="_blank"> <small>[Project]</small></a>
+				<a href="https://ieeexplore.ieee.org/document/10225433" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/pangtao22/planning_through_contact" target="_blank"> <small>[Code]</small></a>
+                </div>
+			</div><hr>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-fluid img-rounded" src="files/paper/dais.png" style="border:1px solid black" alt="">
+                </div>
+				<div class="col-md-9">
+				<b><font color="black">Discrete Approximate Information States in Partially Observable Environments</font></b><br>
+				<u>Lujie Yang</u>, Kaiqing Zhang, Alexandre Amice, Yunzhu Li, Russ Tedrake
+				<br>
+				<b><font color="navy">American Control Conference (ACC) 2022</font></b> <br>
+				<a href="https://ieeexplore.ieee.org/document/9867149" target="_blank"> <small>[Paper]</small></a>
+                </div>
+			</div><hr>
+
+            <div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid img-rounded" src="files/paper/rss.png" style="border:1px solid black" alt="">
+				</div>
+				<div class="col-md-9">
+				<b><font color="black">Lyapunov-stable neural-network control</font></b><br>
+				Hongkai Dai, Benoit Landry, <u>Lujie Yang</u>, Marco Pavone, Russ Tedrake
+				<br>
+				<b><font color="navy">Robotics: Science and Systems (RSS) 2021</font></b> <br>
+				<a href="https://arxiv.org/pdf/2109.14152.pdf" target="_blank"> <small>[Paper]</small></a>
+				<a href="https://github.com/StanfordASL/neural-network-lyapunov" target="_blank"> <small>[Code]</small></a>
+                </div>
+			</div><hr>
+        
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-fluid img-rounded" src="files/paper/exp_setup.jpeg" style="border:1px solid black" alt="">
+                </div>
+				<div class="col-md-9">
+				<b><font color="black">Shared Perception for Connected and Automated Vehicles</font></b><br>
+				Yeojun Kim, Luca Onesto, Samuel Tay, <u>Lujie Yang</u>, Jacopo Guanetti, Sergio Savaresi, Francesco Borrelli
+				<br>
+				<b><font color="navy">IEEE Intelligent Vehicles Symposium (IV) 2020</font></b> <br>
+				<a href="https://ieeexplore.ieee.org/document/9304842" target="_blank"> <small>[Paper]</small></a>
+                </div>
+			</div><hr>
+	<br><br>
+
+	<!-- Awards -->
+	<div class="container">
+		<h3 id="Honors" style="padding-top: 80px; margin-top: -80px;">Selected Honors</h3>
+		<ul>
+			<li>MIT Presidential Graduate Fellowship, 2020 </a></li>
+            <li>MIT Richard C. Dupont Fellowship, 2021 </a></li>
+			<li>MIT Tung/Lewis Fellowship, 2020 </a></li>
+		</ul>
+	</div><br>
+
+	<!-- Teaching -->
+	<div class="container">
+		<h3 id="teaching" style="padding-top: 80px; margin-top: -80px;">Teaching</h3>
+		<ul>
+			<li>6.832: Underactuated Robotics, MIT</a></li>
+			<li>ME 131: Vehicel Dynamics and Control, UC Berkeley</li>
+        </ul>
+	</div><br>
+
+	<!-- Service -->
+	<!-- <div class="container" style="padding-top: 20px; font-size: 17px; width: 1080px">
+		<h3 id="Service" style="padding-top: 80px; margin-top: -80px;">Professional Service</h3>
+		<ul>
+			<li> Workshops / Tutorials: <br>
+				<a href="https://s2023.siggraph.org/presentation/?id=gensub_208&sess=sess164" target="_blank">Diffusion Models Course at SIGGRAPH 2023 <br>
+			</li>
+			<li> Conference Reviewer: <br>
+				IEEE International Conference on Robotics and Automoation (ICRA) <br>
+			</li>
+			<li>Journal Reviewer: <br>
+				IEEE Robotics and Automation Letters (RA-L) <br>
+			</li>
+		</ul>
+	</div><br> -->
+
+	<div class="container">
+		<hr>
+		<center>
+			<footer>
+				<p>&copy; Massachusetts Institute of Technology 2020</p>
+			</footer>
+		</center>
+	</div>
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script>showPubs(1);</script>
+	<script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
